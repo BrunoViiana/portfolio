@@ -1,0 +1,166 @@
+@charset "UTF-8";
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #1b1b1b;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #000000;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 30px;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+/* Estilo da seção Sobre */
+section#sobre {
+    padding: 50px;
+    text-align: center;
+}
+
+section#sobre h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+section#sobre p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 50px;
+}
+
+/* Estilo da seção Projetos */
+section#projetos {
+    padding: 50px;
+}
+
+section#projetos h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+section#projetos ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+section#projetos li {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: calc(50% - 10px);
+    transition: all 0.3s ease-in-out;
+}
+
+section#projetos li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+section#projetos li h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+section#projetos li p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+section#projetos li a {
+    display: block;
+    text-align: center;
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: auto;
+    width: fit-content;
+}
+
+/* Estilo da seção Contato */
+section#contato {
+    background-color: #000000;
+    padding: 50px;
+    text-align: center;
+}
+
+section#contato form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+section#contato label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+section#contato input[type="text"],
+section#contato input[type="email"],
+section#contato textarea {
+    width: calc(50% - 10px);
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+section#contato textarea {
+    height: 150px;
+}
+
+section#contato input[type="submit"] {
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+section#contato input[type="submit"]:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
